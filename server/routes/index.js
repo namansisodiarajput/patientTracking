@@ -5,6 +5,7 @@ module.exports = (app) => {
     message: 'Welcome to the Niramai!',
   }));
 
+  // app.post('/api/register', userController.create);
   app.post('/api/register', userController.create);
   app.get('/api/users/list', userController.list);
   app.get('/api/users/:userId', userController.getUser);
